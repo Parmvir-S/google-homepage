@@ -45,11 +45,19 @@ background-color: #ddd;
 .navItems a{
     color: #222;
 }
+.navItems button {
+    background-color: white;
+    border-style: none;
+}
 #sharingan {
     position: relative;
     top: -5.2px;
     left: 10%;
 }
+#dot:hover {
+    box-shadow: 0px 0px 5px 7px #e4e4e4;
+    border-radius: 50%;
+} 
 
 /*Main Part*/
 .main {
@@ -78,17 +86,38 @@ background-color: #ddd;
     grid-row: 2/3;
 }
 .inner input {
-    width: 600px;
+    width: 550px;
     height: 34px;
     border-radius: 20px;
     border-width: 1px;
     border-color:rgb(177, 174, 174);
     margin-left: 12%;
+    padding-left: 4%;
+    font-family: arial,sans-serif;
+    font-size: 16px;
 }
+
+input[type='text'] {
+    background-image: url(images/mag.png);
+    background-size: 15px 15px;
+    background-position: 12px 10px;
+    background-repeat: no-repeat;
+}
+#input_img {
+    position:absolute;
+    /* bottom:386px;
+    right:455px;
+    width:16px;
+    height:20px; */
+    bottom: 52.75%;
+    right: 29.65%;
+    width: 16px;
+    height: 20px;
+}
+
 .inner input:hover {
     /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
     box-shadow: 0px 0px 10px 1px #b8b1b1;
-
 }
 
 .b1 {
@@ -104,6 +133,10 @@ background-color: #ddd;
     margin-left: 60%;
     border-style: none;
 }
+.b1:hover {
+    box-shadow: 0px 0px 10px 1px #b8b1b1;
+}
+
 .b2 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -117,6 +150,10 @@ background-color: #ddd;
     margin-right: 370px;
     border-style: none;
 }
+.b2:hover {
+    box-shadow: 0px 0px 10px 1px #b8b1b1;
+}
+
 .inner p {
     grid-column: 1/3;
     margin-left: 36%;

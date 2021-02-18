@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/toplogo.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Google</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
                 <li><a href="#">Store</a></li>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a href="#"><img src="images/nineDot.jpg" width=20></a></li>
-                <li><a href="#"><img id="sharingan" src="images/loginLogo.png" width=30></a></li>
+                <li><a href="#"><img id="dot" src="images/nineDot.jpg" width=20></a></li>
+                <li><button><a href="#"><img id="sharingan" src="images/loginLogo.png" width=30></a></button></li>
             </ul>
         </div>
         <div class="main">
@@ -26,9 +27,10 @@
                 <form>
                     <label for="search"></label>
                     <input type="text" id="search" name="search">
+                    <img src="/images/mic.png" id="input_img">
                 </form>
                 <button type="button" class="b1">Google Search</button>
-                <button type="button" class="b2">I'm Feeling Lucky</button>
+                <button type="button" onclick="feelingLucky()" class="b2">I'm Feeling Lucky</button>
                 <p>Google offered in: <a href="#">Francais</a></p>
             </div>
         </div>
